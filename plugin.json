@@ -1,0 +1,11 @@
+{
+  "Group": "Widgets",
+  "FriendlyName": "Vazir Font for Admin",
+  "SystemName": "Widgets.VazirFontForAdmin",
+  "Version": "1.0",
+  "SupportedVersions": [ "4.30" ],
+  "Author": "AmirHossein Marjani",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Widgets.VazirFontForAdmin.dll",
+  "Description": "This plugin Set font of admin area to vazir"
+}

@@ -1,0 +1,449 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Copyright>Marjani.net</Copyright>
+    <Company>Marjani.net</Company>
+    <Authors>AmirHossein Marjani</Authors>
+    <!--<PackageLicenseUrl>PACKAGE_LICENSE_URL</PackageLicenseUrl>
+    <PackageProjectUrl>PACKAGE_PROJECT_URL</PackageProjectUrl>
+    <RepositoryUrl>REPOSITORY_URL</RepositoryUrl>-->
+    <RepositoryType>Git</RepositoryType>
+    <OutputPath>..\..\Presentation\Nop.Web\Plugins\Widgets.VazirFontForAdmin</OutputPath>
+    <OutDir>$(OutputPath)</OutDir>
+    <!--Set this parameter to true to get the dlls copied from the NuGet cache to the output of your    project. You need to set this parameter to true if your plugin has a nuget package to ensure that   the dlls copied from the NuGet cache to the output of your project-->
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Content\css\vazirfont.css" />
+    <None Remove="Content\font\vazir\CHANGELOG.md" />
+    <None Remove="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Black-FD-WOL.eot" />
+    <None Remove="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Black-FD-WOL.ttf" />
+    <None Remove="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Black-FD-WOL.woff" />
+    <None Remove="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Black-FD-WOL.woff2" />
+    <None Remove="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Bold-FD-WOL.eot" />
+    <None Remove="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Bold-FD-WOL.ttf" />
+    <None Remove="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Bold-FD-WOL.woff" />
+    <None Remove="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Bold-FD-WOL.woff2" />
+    <None Remove="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-FD-WOL.eot" />
+    <None Remove="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-FD-WOL.ttf" />
+    <None Remove="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-FD-WOL.woff" />
+    <None Remove="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-FD-WOL.woff2" />
+    <None Remove="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Light-FD-WOL.eot" />
+    <None Remove="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Light-FD-WOL.ttf" />
+    <None Remove="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Light-FD-WOL.woff" />
+    <None Remove="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Light-FD-WOL.woff2" />
+    <None Remove="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Medium-FD-WOL.eot" />
+    <None Remove="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Medium-FD-WOL.ttf" />
+    <None Remove="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Medium-FD-WOL.woff" />
+    <None Remove="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Medium-FD-WOL.woff2" />
+    <None Remove="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Thin-FD-WOL.eot" />
+    <None Remove="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Thin-FD-WOL.ttf" />
+    <None Remove="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Thin-FD-WOL.woff" />
+    <None Remove="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Thin-FD-WOL.woff2" />
+    <None Remove="Content\font\vazir\Farsi-Digits\Vazir-Black-FD.eot" />
+    <None Remove="Content\font\vazir\Farsi-Digits\Vazir-Black-FD.ttf" />
+    <None Remove="Content\font\vazir\Farsi-Digits\Vazir-Black-FD.woff" />
+    <None Remove="Content\font\vazir\Farsi-Digits\Vazir-Black-FD.woff2" />
+    <None Remove="Content\font\vazir\Farsi-Digits\Vazir-Bold-FD.eot" />
+    <None Remove="Content\font\vazir\Farsi-Digits\Vazir-Bold-FD.ttf" />
+    <None Remove="Content\font\vazir\Farsi-Digits\Vazir-Bold-FD.woff" />
+    <None Remove="Content\font\vazir\Farsi-Digits\Vazir-Bold-FD.woff2" />
+    <None Remove="Content\font\vazir\Farsi-Digits\Vazir-FD.eot" />
+    <None Remove="Content\font\vazir\Farsi-Digits\Vazir-FD.ttf" />
+    <None Remove="Content\font\vazir\Farsi-Digits\Vazir-FD.woff" />
+    <None Remove="Content\font\vazir\Farsi-Digits\Vazir-FD.woff2" />
+    <None Remove="Content\font\vazir\Farsi-Digits\Vazir-Light-FD.eot" />
+    <None Remove="Content\font\vazir\Farsi-Digits\Vazir-Light-FD.ttf" />
+    <None Remove="Content\font\vazir\Farsi-Digits\Vazir-Light-FD.woff" />
+    <None Remove="Content\font\vazir\Farsi-Digits\Vazir-Light-FD.woff2" />
+    <None Remove="Content\font\vazir\Farsi-Digits\Vazir-Medium-FD.eot" />
+    <None Remove="Content\font\vazir\Farsi-Digits\Vazir-Medium-FD.ttf" />
+    <None Remove="Content\font\vazir\Farsi-Digits\Vazir-Medium-FD.woff" />
+    <None Remove="Content\font\vazir\Farsi-Digits\Vazir-Medium-FD.woff2" />
+    <None Remove="Content\font\vazir\Farsi-Digits\Vazir-Thin-FD.eot" />
+    <None Remove="Content\font\vazir\Farsi-Digits\Vazir-Thin-FD.ttf" />
+    <None Remove="Content\font\vazir\Farsi-Digits\Vazir-Thin-FD.woff" />
+    <None Remove="Content\font\vazir\Farsi-Digits\Vazir-Thin-FD.woff2" />
+    <None Remove="Content\font\vazir\HELP.md" />
+    <None Remove="Content\font\vazir\LICENSE" />
+    <None Remove="Content\font\vazir\README.md" />
+    <None Remove="Content\font\vazir\sample.png" />
+    <None Remove="Content\font\vazir\Vazir-Black.eot" />
+    <None Remove="Content\font\vazir\Vazir-Black.ttf" />
+    <None Remove="Content\font\vazir\Vazir-Black.woff" />
+    <None Remove="Content\font\vazir\Vazir-Black.woff2" />
+    <None Remove="Content\font\vazir\Vazir-Bold.eot" />
+    <None Remove="Content\font\vazir\Vazir-Bold.ttf" />
+    <None Remove="Content\font\vazir\Vazir-Bold.woff" />
+    <None Remove="Content\font\vazir\Vazir-Bold.woff2" />
+    <None Remove="Content\font\vazir\Vazir-Light.eot" />
+    <None Remove="Content\font\vazir\Vazir-Light.ttf" />
+    <None Remove="Content\font\vazir\Vazir-Light.woff" />
+    <None Remove="Content\font\vazir\Vazir-Light.woff2" />
+    <None Remove="Content\font\vazir\Vazir-Medium.eot" />
+    <None Remove="Content\font\vazir\Vazir-Medium.ttf" />
+    <None Remove="Content\font\vazir\Vazir-Medium.woff" />
+    <None Remove="Content\font\vazir\Vazir-Medium.woff2" />
+    <None Remove="Content\font\vazir\Vazir-Thin.eot" />
+    <None Remove="Content\font\vazir\Vazir-Thin.ttf" />
+    <None Remove="Content\font\vazir\Vazir-Thin.woff" />
+    <None Remove="Content\font\vazir\Vazir-Thin.woff2" />
+    <None Remove="Content\font\vazir\Vazir.eot" />
+    <None Remove="Content\font\vazir\Vazir.ttf" />
+    <None Remove="Content\font\vazir\Vazir.woff" />
+    <None Remove="Content\font\vazir\Vazir.woff2" />
+    <None Remove="Content\font\vazir\Without-Latin\Vazir-Black-WOL.eot" />
+    <None Remove="Content\font\vazir\Without-Latin\Vazir-Black-WOL.ttf" />
+    <None Remove="Content\font\vazir\Without-Latin\Vazir-Black-WOL.woff" />
+    <None Remove="Content\font\vazir\Without-Latin\Vazir-Black-WOL.woff2" />
+    <None Remove="Content\font\vazir\Without-Latin\Vazir-Bold-WOL.eot" />
+    <None Remove="Content\font\vazir\Without-Latin\Vazir-Bold-WOL.ttf" />
+    <None Remove="Content\font\vazir\Without-Latin\Vazir-Bold-WOL.woff" />
+    <None Remove="Content\font\vazir\Without-Latin\Vazir-Bold-WOL.woff2" />
+    <None Remove="Content\font\vazir\Without-Latin\Vazir-Light-WOL.eot" />
+    <None Remove="Content\font\vazir\Without-Latin\Vazir-Light-WOL.ttf" />
+    <None Remove="Content\font\vazir\Without-Latin\Vazir-Light-WOL.woff" />
+    <None Remove="Content\font\vazir\Without-Latin\Vazir-Light-WOL.woff2" />
+    <None Remove="Content\font\vazir\Without-Latin\Vazir-Medium-WOL.eot" />
+    <None Remove="Content\font\vazir\Without-Latin\Vazir-Medium-WOL.ttf" />
+    <None Remove="Content\font\vazir\Without-Latin\Vazir-Medium-WOL.woff" />
+    <None Remove="Content\font\vazir\Without-Latin\Vazir-Medium-WOL.woff2" />
+    <None Remove="Content\font\vazir\Without-Latin\Vazir-Thin-WOL.eot" />
+    <None Remove="Content\font\vazir\Without-Latin\Vazir-Thin-WOL.ttf" />
+    <None Remove="Content\font\vazir\Without-Latin\Vazir-Thin-WOL.woff" />
+    <None Remove="Content\font\vazir\Without-Latin\Vazir-Thin-WOL.woff2" />
+    <None Remove="Content\font\vazir\Without-Latin\Vazir-WOL.eot" />
+    <None Remove="Content\font\vazir\Without-Latin\Vazir-WOL.ttf" />
+    <None Remove="Content\font\vazir\Without-Latin\Vazir-WOL.woff" />
+    <None Remove="Content\font\vazir\Without-Latin\Vazir-WOL.woff2" />
+    <None Remove="plugin.json" />
+    <None Remove="Views\PublicInfo.cshtml" />
+    <None Remove="Views\_ViewImports.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Presentation\Nop.Web.Framework\Nop.Web.Framework.csproj" />
+    <ClearPluginAssemblies Include="$(MSBuildProjectDirectory)\..\..\Build\ClearPluginAssemblies.proj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\css\vazirfont.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\CHANGELOG.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Black-FD-WOL.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Black-FD-WOL.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Black-FD-WOL.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Black-FD-WOL.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Bold-FD-WOL.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Bold-FD-WOL.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Bold-FD-WOL.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Bold-FD-WOL.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-FD-WOL.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-FD-WOL.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-FD-WOL.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-FD-WOL.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Light-FD-WOL.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Light-FD-WOL.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Light-FD-WOL.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Light-FD-WOL.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Medium-FD-WOL.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Medium-FD-WOL.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Medium-FD-WOL.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Medium-FD-WOL.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Thin-FD-WOL.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Thin-FD-WOL.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Thin-FD-WOL.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits-Without-Latin\Vazir-Thin-FD-WOL.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits\Vazir-Black-FD.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits\Vazir-Black-FD.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits\Vazir-Black-FD.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits\Vazir-Black-FD.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits\Vazir-Bold-FD.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits\Vazir-Bold-FD.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits\Vazir-Bold-FD.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits\Vazir-Bold-FD.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits\Vazir-FD.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits\Vazir-FD.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits\Vazir-FD.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits\Vazir-FD.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits\Vazir-Light-FD.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits\Vazir-Light-FD.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits\Vazir-Light-FD.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits\Vazir-Light-FD.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits\Vazir-Medium-FD.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits\Vazir-Medium-FD.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits\Vazir-Medium-FD.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits\Vazir-Medium-FD.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits\Vazir-Thin-FD.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits\Vazir-Thin-FD.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits\Vazir-Thin-FD.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Farsi-Digits\Vazir-Thin-FD.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\HELP.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\LICENSE">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\README.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\sample.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Vazir-Black.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Vazir-Black.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Vazir-Black.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Vazir-Black.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Vazir-Bold.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Vazir-Bold.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Vazir-Bold.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Vazir-Bold.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Vazir-Light.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Vazir-Light.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Vazir-Light.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Vazir-Light.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Vazir-Medium.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Vazir-Medium.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Vazir-Medium.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Vazir-Medium.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Vazir-Thin.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Vazir-Thin.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Vazir-Thin.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Vazir-Thin.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Vazir.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Vazir.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Vazir.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Vazir.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Without-Latin\Vazir-Black-WOL.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Without-Latin\Vazir-Black-WOL.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Without-Latin\Vazir-Black-WOL.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Without-Latin\Vazir-Black-WOL.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Without-Latin\Vazir-Bold-WOL.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Without-Latin\Vazir-Bold-WOL.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Without-Latin\Vazir-Bold-WOL.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Without-Latin\Vazir-Bold-WOL.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Without-Latin\Vazir-Light-WOL.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Without-Latin\Vazir-Light-WOL.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Without-Latin\Vazir-Light-WOL.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Without-Latin\Vazir-Light-WOL.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Without-Latin\Vazir-Medium-WOL.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Without-Latin\Vazir-Medium-WOL.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Without-Latin\Vazir-Medium-WOL.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Without-Latin\Vazir-Medium-WOL.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Without-Latin\Vazir-Thin-WOL.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Without-Latin\Vazir-Thin-WOL.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Without-Latin\Vazir-Thin-WOL.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Without-Latin\Vazir-Thin-WOL.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Without-Latin\Vazir-WOL.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Without-Latin\Vazir-WOL.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Without-Latin\Vazir-WOL.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\vazir\Without-Latin\Vazir-WOL.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugin.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\PublicInfo.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\_ViewImports.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <!-- This target execute after "Build" target -->
+  <Target Name="NopTarget" AfterTargets="Build">
+    <!-- Delete unnecessary libraries from plugins path -->
+    <MSBuild Projects="@(ClearPluginAssemblies)" Properties="PluginPath=$(MSBuildProjectDirectory)\$(OutDir)" Targets="NopClear" />
+  </Target>
+</Project>
